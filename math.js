@@ -11,11 +11,28 @@ for (let a = 0; a <= 20; a++)
   }
 
   
-let r=7;
-let π= 3.14;
+// let r=7;
+// let π= 3.14;
 
-let area = π * r * r;
-let circumference = 2 *π*r;
+// let area = π * r * r;
+// let circumference = 2 *π*r;
 
-console.log("Area = " + area);
-console.log("Circumference = " + circumference);
+// console.log("Area = " + area);
+// console.log("Circumference = " + circumference);
+
+function getCircleValues(r) {
+  let π = 3.14;
+  let area = π * r * r;
+  let circumference = 2 * π * r;
+
+  return {
+    area: area,
+    circumference: circumference
+  };
+}
+
+let result = getCircleValues(7);
+console.log("Area = " + result.area);
+console.log("Circumference = " + result.circumference);
+
+
