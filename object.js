@@ -1,5 +1,4 @@
 1.
-
 const student={
     name:"Divya",
     age:24,
@@ -52,8 +51,6 @@ const book = {
   author: "Paulo Coelho",
   pages: 208
 };
-
-
 for (let key in book) {
   console.log(key + ": " + book[key]);
 }
@@ -80,8 +77,7 @@ const rectangle = {
     return this.width * this.height;
   }
 };
-
-console.log("rectangle area="+rectangle.area());
+console.log("rectangle area=" +rectangle.area());
 
 
 7.
@@ -104,7 +100,7 @@ const playlist = {
   name: "Chill Vibes",
   songs: ["Song A", "Song B", "Song C"]
 };
-console.log("second song:"+playlist.songs[1]);
+console.log("second song:"+ playlist.songs[1]);
 playlist.songs.push("Song D");
 console.log(playlist);
 for(let i=0;i<playlist.songs.length;i++){
