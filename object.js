@@ -106,3 +106,26 @@ console.log(playlist);
 for(let i=0;i<playlist.songs.length;i++){
     console.log(playlist.songs[i]);
 }
+
+
+
+
+
+const products = [
+  { id: 1, name: 'Laptop', category: 'Electronics' },
+  { id: 2, name: 'T-Shirt', category: 'Apparel' },
+  { id: 3, name: 'Headphones', category: 'Electronics' },
+  { id: 4, name: 'Jeans', category: 'Apparel' },
+  { id: 5, name: 'Keyboard', category: 'Electronics' },
+];
+
+
+const electronics = products.filter(product => product.category === 'Electronics');
+const apparel= products.filter(product=> product.category ==='Apparel');
+
+console.log(electronics);
+console.log(apparel);
+
+
+
+
